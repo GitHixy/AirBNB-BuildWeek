@@ -1,0 +1,201 @@
+/* navbar */
+
+.nav__container {
+  border-bottom: 1px solid rgb(199, 199, 199, 0.7);
+}
+
+.navbar {
+  background-color: white !important;
+  width: 85%;
+  margin: auto;
+}
+
+.navbar img {
+  width: 100px;
+}
+
+.nav-link {
+  --bs-nav-link-color: black;
+  text-decoration: underline;
+}
+
+/* jumbotron */
+
+.jumbotron {
+    position: relative;
+    width: 85%;
+    margin-inline: auto;
+    margin-block: 50px;
+}
+
+.jumbotron img {
+    width: 70%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.search__card {
+  max-width: 420px;
+  padding: 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 30px 5px rgba(129, 129, 129, 0.69);
+  box-shadow: 5px 5px 30px 5px rgba(129, 129, 129, 0.69);
+  position: absolute;
+  left: 0;
+  background-color: white;
+}
+
+.search__card h2 {
+    font-weight: bold;
+}
+
+.search__card p {
+  margin: 0;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.input__container {
+  margin: auto;
+  border: 1px solid rgba(199, 199, 199, 0.8);
+  border-radius: 10px;
+}
+
+.search__card form button {
+  background-color: #dd1162;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+  padding-block: 10px;
+  margin-top: 10px;
+}
+
+.input__text {
+  padding-block: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(199, 199, 199, 0.8);
+}
+
+.input__date {
+  padding-block: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.input__number {
+  padding-block: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.input__container .vr {
+  padding-inline: 1px;
+  margin-block: 5px;
+}
+
+/* main */
+
+main {
+    width: 85%;
+    margin: auto;
+}
+
+.insights__wrapper {
+    margin-block: 100px;
+}
+
+.icon__insights ion-icon {
+    font-size: 24px;
+}
+
+.icon__insights p {
+    font-size: 18px;
+}
+
+.popular__card {
+    width: 302px;
+    padding: 0;
+}
+
+.popular__card img {
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.popular__description {
+    color: rgb(110, 110, 110);
+}
+
+.popular__description span {
+    color: black;
+    font-weight: bold;
+}
+
+.popular__wrapper button {
+    background-color: white;
+    border: 1px solid rgba(110, 110, 110);
+    padding-block: 10px;
+    padding-inline: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.popular__title div:first-child {
+    font-weight: bold;
+}
+
+.popular__wrapper p:first-of-type {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.popular__wrapper button {
+    margin-top: 30px;
+}
+
+.faq__wrapper {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.faq__wrapper h2 {
+    font-size: 46px;
+}
+
+.faq__item {
+    font-size: 26px;
+    border-bottom: 1px solid rgb(110, 110, 110, 0.3);
+    padding: 10px;
+}
+
+.faq__item ion-icon {
+    min-width: 26px;
+}
+
+.sections__container {
+    margin-bottom: 60px;
+}
+
+/* footer */
+
+footer {
+    background-color: rgb(199, 199, 199, 0.3);
+    border-top: 1px solid rgb(199, 199, 199);
+    padding: 20px;
+}
+
+.footer__container {
+    width: 85%;
+    margin: auto;
+}
+
+.footer__icons ion-icon {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

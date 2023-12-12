@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trova alloggi Airbnb in questa località: Italia</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style-welcome.css" />
+  </head>
+  <body>
+    <div class="nav__container py-2">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <img src="./assets/logo-pink.png" alt="logo-pink" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse d-flex justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  >Apri un Airbnb</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Registrati</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="jumbotron d-flex justify-content-end align-items-center">
+      <div class="search__card d-flex flex-column">
+        <h2>Trova alloggi in questa località: Italia</h2>
+        <p>
+          Cerchi una baita, un appartamento o un castello? Trova l'alloggio
+          perfetto su Airbnb.
+        </p>
+        <div class="form__container row">
+          <form action="Search" class="d-flex flex-column gap-2">
+            <input
+              type="text"
+              class="col-12 input__text"
+              placeholder="Dove vuoi andare?"
+            />
+            <div class="input__container justify-content-evenly row col-12">
+              <input
+                type="date"
+                class="col-5 input__date"
+                placeholder="check-in"
+              />
+              <div class="vr"></div>
+              <input
+                type="date"
+                class="col-5 input__date"
+                placeholder="check-out"
+              />
+            </div>
+            <div class="input__container justify-content-evenly row col-12">
+              <input
+                type="number"
+                class="col-5 input__number"
+                placeholder="adulti"
+              />
+              <div class="vr"></div>
+              <input
+                type="number"
+                class="col-5 input__number"
+                placeholder="bambini"
+              />
+            </div>
+            <button type="button" class="col-12">Cerca</button>
+          </form>
+        </div>
+      </div>
+      <img src="./assets/home.jpg" alt="" />
+    </div>
+
+    <main>
+      <section class="row justify-content-evenly insights__wrapper">
+        <div class="icon__insights col-4">
+          <ion-icon name="shield-checkmark-outline"></ion-icon>
+          <h4>Goditi un po' di flessibilità</h4>
+          <p>
+            Gli annunci di alloggi con termini di cancellazione Flessibili ti
+            permettono di effettuare una nuova prenotazione più facilmente se i
+            tuoi programmi cambiano.
+          </p>
+        </div>
+        <div class="icon__insights col-4">
+          <ion-icon name="home-outline"></ion-icon>
+          <h4>Più di 7 milioni di annunci attivi</h4>
+          <p>
+            Unisciti a più di 1 miliardo di ospiti che hanno trovato alloggi in
+            oltre 220 paesi e destinazioni.
+          </p>
+        </div>
+        <div class="icon__insights col-4">
+          <ion-icon name="options-outline"></ion-icon>
+          <h4>Oltre 100 filtri per soggiorni su misura</h4>
+          <p>
+            Scegli la tua fascia di prezzo, il numero di camere che desideri e
+            altri servizi importanti per trovare l'alloggio più adatto alle tue
+            esigenze.
+          </p>
+        </div>
+      </section>
+      <section class="popular__wrapper">
+        <h2>Alloggi di tendenza in questa località: Italia</h2>
+        <p>
+          Questi alloggi hanno ottime recensioni e i relativi annunci vengono
+          consultati spesso su Airbnb.
+        </p>
+        <div class="card__container row justify-content-evenly">
+          <div class="popular__card d-flex flex-column col-3">
+            <img
+              src="./assets/672dca92-0cf8-467f-9085-aee7ba35e9e7.webp"
+              alt=""
+            />
+            <div class="popular__title d-flex justify-content-between">
+              <div>Casa vacanze - Bosentino</div>
+              <div class="side__title d-flex align-items-center gap-1">
+                <ion-icon name="star"></ion-icon>
+                <div>4,95(96)</div>
+              </div>
+            </div>
+            <div class="popular__description">
+              Lake Alpe Lodge & Idromassaggio...
+            </div>
+            <div class="popular__description">
+              456 visualizzazioni la settimana scorsa
+            </div>
+            <div class="popular__description">06-11 gen - Host privato</div>
+            <div class="popular__description">
+              <span>241€ notte</span> - 1202€ in totale
+            </div>
+          </div>
+          <div class="popular__card d-flex flex-column col-3">
+            <img
+              src="./assets/4f9fc014-ede2-42ad-beeb-06a16ed09b63.webp"
+              alt=""
+            />
+            <div class="popular__title d-flex justify-content-between">
+              <div>Appartamento - Fiumicino</div>
+              <div class="side__title d-flex align-items-center gap-1">
+                <ion-icon name="star"></ion-icon>
+                <div>4,84(216)</div>
+              </div>
+            </div>
+            <div class="popular__description">L'amore attico</div>
+            <div class="popular__description">
+              1.232 visualizzazioni la settimana scorsa
+            </div>
+            <div class="popular__description">17-22 dec - Host privato</div>
+            <div class="popular__description">
+              <span>74€ notte</span> - 369€ in totale
+            </div>
+          </div>
+          <div class="popular__card d-flex flex-column col-3">
+            <img
+              src="./assets/085af180-b863-4757-834e-177348f2bf5c.webp"
+              alt=""
+            />
+            <div class="popular__title d-flex justify-content-between">
+              <div>Casa vacanze - Varenna</div>
+              <div class="side__title d-flex align-items-center gap-1">
+                <ion-icon name="star"></ion-icon>
+                <div>4,94(416)</div>
+              </div>
+            </div>
+            <div class="popular__description">
+              Piccola casa naturale sul lago
+            </div>
+            <div class="popular__description">
+              1.2252 visualizzazioni la settimana scorsa
+            </div>
+            <div class="popular__description">
+              04-09 feb - Host professionista
+            </div>
+            <div class="popular__description">
+              <span>376€ notte</span> - 1876€ in totale
+            </div>
+          </div>
+          <div class="popular__card d-flex flex-column col-3">
+            <img
+              src="./assets/a7786084-f290-41e7-b50d-4d2b290376f2.webp"
+              alt=""
+            />
+            <div class="popular__title d-flex justify-content-between">
+              <div>Appartamento - Firenze</div>
+              <div class="side__title d-flex align-items-center gap-1">
+                <ion-icon name="star"></ion-icon>
+                <div>4,89(135)</div>
+              </div>
+            </div>
+            <div class="popular__description">
+              The Raven's Lair - near station, private...
+            </div>
+            <div class="popular__description">
+              382 visualizzazioni la settimana scorsa
+            </div>
+            <div class="popular__description">11-16 gen - Host privato</div>
+            <div class="popular__description">
+              <span>186€ notte</span> - 837€ in totale
+            </div>
+          </div>
+        </div>
+        <button type="button">Scopri di più</button>
+      </section>
+      <section class="faq__wrapper row justify-content-between">
+        <h2 class="col-4">Le risposte alle tue domande</h2>
+        <aside class="faq__container col-6 row gap-3">
+          <div
+            class="faq__item col-12 d-flex justify-content-between align-items-center"
+            data-bs-toggle="collapse"
+            href="#collapse-1"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapse-1"
+          >
+            Cos'è Airbnb e come funziona?
+            <ion-icon name="chevron-down-outline"></ion-icon>
+          </div>
+          <div class="collapse" id="collapse-1">
+            <div class="card card-body">
+              Verifichiamo i profili personali e gli annunci per garantire
+              un'esperienza di condivisione facile, piacevole e sicura per
+              milioni di host e viaggiatori di tutto il mondo.
+              <span> <a href="">Scopri di più su Airbnb. </a> </span>
+            </div>
+          </div>
+          <div
+            class="faq__item col-12 d-flex justify-content-between align-items-center"
+            data-bs-toggle="collapse"
+            href="#collapse-2"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapse-2"
+          >
+            Come si utilizzano i filtri di ricerca?
+            <ion-icon name="chevron-down-outline"></ion-icon>
+          </div>
+          <div class="collapse" id="collapse-2">
+            <div class="card card-body">
+              I nostri filtri di ricerca ti permettono di consultare facilmente
+              solo gli annunci di alloggi che presentano le caratteristiche di
+              cui hai bisogno. Scopri di più sull'utilizzo dei filtri di ricerca
+              e sulle modalità di ricerca flessibili.
+            </div>
+          </div>
+          <div
+            class="faq__item col-12 d-flex justify-content-between align-items-center"
+            data-bs-toggle="collapse"
+            href="#collapse-3"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapse-3"
+          >
+            Devo incontrare il mio host?
+            <ion-icon name="chevron-down-outline"></ion-icon>
+          </div>
+          <div class="collapse" id="collapse-3">
+            <div class="card card-body">
+              Le opzioni come il self check-in e la prenotazione di una casa
+              intera ti consentono di interagire con l'host soprattutto tramite
+              il sistema di messaggistica dell'app, così potete comunicare
+              direttamente in caso di necessità.
+            </div>
+          </div>
+          <div
+            class="faq__item col-12 d-flex justify-content-between align-items-center"
+            data-bs-toggle="collapse"
+            href="#collapse-4"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapse-4"
+          >
+            Cosa succede se devo cancellare una prenotazione a causa di un
+            problema con l'alloggio o con l'host?
+            <ion-icon name="chevron-down-outline"></ion-icon>
+          </div>
+          <div class="collapse" id="collapse-4">
+            <div class="card card-body">
+              Nella maggior parte dei casi, puoi risolvere qualsiasi
+              inconveniente inviando un messaggio direttamente all'host. Se non
+              può aiutarti, contatta Airbnb entro 24 ore dall'individuazione del
+              problema. Scopri di più
+            </div>
+          </div>
+          <div
+            class="faq__item col-12 d-flex justify-content-between align-items-center"
+            data-bs-toggle="collapse"
+            href="#collapse-5"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapse-5"
+          >
+            Hai bisogno di maggiori informazioni?
+            <ion-icon name="chevron-down-outline"></ion-icon>
+          </div>
+          <div class="collapse" id="collapse-5">
+            <div class="card card-body">
+              Per trovare ulteriori risposte alle tue domande, visita il nostro
+              Centro Assistenza. Scopri di più
+            </div>
+          </div>
+        </aside>
+      </section>
+      <div class="sections__container d-flex gap-2 align-items-center">
+        <a href="">Airbnb</a>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+        <a href="">Soggiorni</a>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+        Italia
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer__container d-flex justify-content-between">
+        <div class="footer__links d-flex align-items-center gap-3">
+          © 2023 Airbnb, inc.
+          <a href="">Privacy</a>
+          <a href="">Termini</a>
+          <a href="">Mappa del sito</a>
+          <a href="">Dettagli dell'azienda</a>
+        </div>
+        <div class="footer__icons d-flex align-items-center gap-3">
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
