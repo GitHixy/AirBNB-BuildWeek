@@ -45,3 +45,59 @@ cursor: pointer;
 .nav-link {
     --bs-nav-link-color: #000000
 }
+.carousel img {
+    width: 20px;
+    cursor: pointer;
+}
+.carousel p {
+    font-size: 12px;
+    margin: 0;
+    cursor: pointer;
+}
+.carousel-inner {
+    width: 90%;
+}
+.carousel__edit {
+    padding-block: 15px;
+    border-block: 1px solid lightgrey;
+}
+#filterButton {
+    border: 1px solid lightgrey;
+    width: 80px;
+    height: 40px;
+    padding: 0;   
+    border-radius: 20px;
+}
+#filterButton:hover {
+    border: 1px solid black;
+}
+#filterButton ion-icon {
+    font-size: 25px;
+}
+
+.carousel-control-next {
+    border: 1px solid black;
+    width: 30px;
+    margin-right: 100px;
+    border-radius: 50px;
+    height: 30px;
+    margin-top: 5px;
+}
+.carousel-control-next-icon {
+    background-image: url(./assets/svgcarouselscontrols/chevron-forward-outline.svg);
+    width: 20px;
+}
+.modal-footer button {
+    background-color: black;
+    color: white;
+    border: none;
+}
+.modal-button {
+    border: 1px solid lightgrey;
+    background-color: white;
+    height: 100px;
+    width: 250px;
+}
+.modal-button:hover {
+    border: 1px solid black;
+}
