@@ -72,3 +72,24 @@ cursor: pointer;
     height: 5px!important;
     border-radius: 100%!important;
 }
+
+.card-body {
+    padding-inline-start: 0;
+}
+
+.card-body *{
+    margin: 0;
+}
+
+.card-body .card-title {
+    font-weight: 600;
+    font-size: large;
+}
+
+.card-body p{
+    color: grey;
+}
+
+.bi-star-fill {
+    font-size: x-small;
+}

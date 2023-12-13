@@ -1179,8 +1179,7 @@ function computeRowNumber(inputArrayLength) {
       rowNumber = (Math.floor(inputArrayLength / ROWSIZE)) + 1;
     }
   }
-  console.log("TOTAL LENGTH:", inputArrayLength)
-  console.log("ROW NUMBER:", rowNumber)
+
   return rowNumber
 }
 
@@ -1191,29 +1190,23 @@ function displayCards() {
   for(let r = 1; r < rowNumber; r++) {
     container.appendChild(row.cloneNode(true))
   }
-  const allRowsArray = document.querySelectorAll(".row-template")
-  console.log(allRowsArray)
+  const allRowsArray = document.querySelectorAll(".row-template");
   for (let a = 0; a < allRowsArray.length; a++) {
     const carouselImageParentArray = allRowsArray[a].querySelectorAll(".carousel-image-placeholder");
     const cardTitleArray = allRowsArray[a].querySelectorAll(".card-title");
-    const cardRatingArray = allRowsArray[a].querySelectorAll(".card-rating");
     const cardTextArray = allRowsArray[a].querySelectorAll(".card-text");
     const cardSecondTextArray = allRowsArray[a].querySelectorAll(".card-second-text");
     const cardPriceArray = allRowsArray[a].querySelectorAll(".card-price");
     const cardBodyArray = allRowsArray[a].querySelectorAll(".card-body");
-    /*     const heartIcon = document.createElement("i")
-      heartIcon.className = "bi"
-      heartIcon.className = "bi-suit-heart" */
     for (let i = (a * ROWSIZE); i < (( a + 1 ) * ROWSIZE); i++) {
-      let rowIndex = (i - (a * ROWSIZE))
+      let rowIndex = (i - (a * ROWSIZE));
       const currentParentDiv = carouselImageParentArray[rowIndex];
       const currentCardTitle = cardTitleArray[rowIndex];
-      const currentRating = cardRatingArray[rowIndex];
       const currentText = cardTextArray[rowIndex];
       const currentSecondText = cardSecondTextArray[rowIndex];
       const currentPrice = cardPriceArray[rowIndex];
       const currentCardBody = cardBodyArray[rowIndex];
-      if (rowIndex > accomodations.length - 1) {
+      if (rowIndex > accomodations.length - i) {
         currentCardBody.style.display = "none";
       } else {
         randomiseId(accomodations[i].id, "carousel-" + rowIndex, allRowsArray[a])
@@ -1225,16 +1218,18 @@ function displayCards() {
             carouselDivImage.classList.add("carousel-item");
           }
           const carouselImages = document.createElement("img");
+          const heartIcon = document.createElement("i");
+          heartIcon.classList.add("bi", "bi-suit-heart")
           carouselImages.setAttribute("src", accomodations[i].picture_urls[l]);
           carouselDivImage.appendChild(carouselImages);
+          carouselDivImage.appendChild(heartIcon)
           currentParentDiv.appendChild(carouselDivImage);
-          /*  carouselDivImage.appendChild(heartIcon) */
         }
-        currentCardTitle.innerHTML = accomodations[i].name;
-        currentRating.innerHTML = accomodations[i].review_scores_rating;
+        currentCardTitle.innerHTML = accomodations[i].name + `${accomodations[i].review_scores_rating ? `<div><i class="bi bi-star-fill"></i>${accomodations[i].review_scores_rating}</div>` : ""}`;
+        /* currentRating.innerHTML = accomodations[i].review_scores_rating; */
         currentText.innerHTML = accomodations[i].host_name;
         currentSecondText.innerHTML = accomodations[i].property_type;
-        currentPrice.innerHTML = accomodations[i].price;
+        currentPrice.innerHTML = `${accomodations[i].price} € <span>notte</span>`;
       }
     }
   }
