@@ -47,13 +47,8 @@
     }
 *{ box-sizing: border-box; 
 }
- 
-
-.immagini {
+.immagini img{
     aspect-ratio: 1/1;
-    border-radius: 50%;
-}
-
-.img {
     object-fit: cover;
+    border-radius: 20px;
 }
