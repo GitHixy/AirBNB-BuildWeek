@@ -1198,6 +1198,8 @@ function displayCards() {
     const cardSecondTextArray = allRowsArray[a].querySelectorAll(".card-second-text");
     const cardPriceArray = allRowsArray[a].querySelectorAll(".card-price");
     const cardBodyArray = allRowsArray[a].querySelectorAll(".card-body");
+    const cardPrevButton = allRowsArray[a].querySelectorAll(".carousel-control-prev")
+    const cardNextButton = allRowsArray[a].querySelectorAll(".carousel-control-next")
     for (let i = (a * ROWSIZE); i < (( a + 1 ) * ROWSIZE); i++) {
       let rowIndex = (i - (a * ROWSIZE));
       const currentParentDiv = carouselImageParentArray[rowIndex];
@@ -1206,8 +1208,12 @@ function displayCards() {
       const currentSecondText = cardSecondTextArray[rowIndex];
       const currentPrice = cardPriceArray[rowIndex];
       const currentCardBody = cardBodyArray[rowIndex];
+      const currentButtonPrevCarousel = cardPrevButton[rowIndex];
+      const currentButtonNextCarousel = cardNextButton[rowIndex];
       if (rowIndex > accomodations.length - i) {
         currentCardBody.style.display = "none";
+        currentButtonPrevCarousel.style.display = "none";
+        currentButtonNextCarousel.style.display = "none";
       } else {
         randomiseId(accomodations[i].id, "carousel-" + rowIndex, allRowsArray[a])
         for (let l = 0; l < accomodations[i].picture_urls.length; l++) {
