@@ -171,7 +171,7 @@ cursor: pointer;
 }
 .carousel__edit {
     padding-block: 15px;
-    border-bottom: solid 1px lightgray;
+    
 }
 #filterButton {
     border: 1px solid lightgrey;
