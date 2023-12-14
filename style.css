@@ -85,6 +85,7 @@ cursor: pointer;
     height: 100%;
     border-bottom-left-radius: 3%;
     border-bottom-right-radius: 3%;
+    object-fit: cover;
 }
 
 .carousel-indicators {
@@ -213,3 +214,67 @@ cursor: pointer;
 .modal-button:hover {
     border: 1px solid black;
 }
+
+/* footer */
+
+footer {
+    background-color: rgb(199, 199, 199, 0.3);
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.footer__container {
+    width: 92%;
+    margin: auto;
+}
+
+.categories__wrapper, .cities__wrapper, .info__wrapper {
+    border-bottom: 1px solid rgb(110, 110, 110, 0.5);
+}
+
+.categories__wrapper {
+    align-content: start;
+}
+
+.categories__item {
+    color: rgb(110, 110, 110);
+    font-weight: bold;
+    margin-block: 10px;
+}
+
+.cities__item, .info__item {
+    font-weight: bold;
+}
+
+.cities__item p, .info__item p {
+    font-weight: lighter;
+}
+
+.cities__wrapper {
+    padding-block: 20px;
+}
+
+.info__wrapper {
+    padding-block: 40px;
+}
+
+.info__item {
+    margin-block: 10px;
+}
+
+footer div {
+    font-size: 14px;
+}
+
+.footer__icons ion-icon {
+    font-size: 18px;
+}
+
+.links__container {
+    flex-wrap: wrap;
+}
+
+.footer__links {
+    flex-wrap: wrap;
+}
+
