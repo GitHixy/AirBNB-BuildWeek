@@ -196,6 +196,7 @@ cursor: pointer;
 #imageCarousel .carousel-control-next-icon {
     background-image: url(./assets/svgcarouselscontrols/chevron-forward-outline.svg);
     width: 20px;
+    scale: 0.8;
 }
 .modal-footer button {
     background-color: black;
