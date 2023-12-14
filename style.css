@@ -165,9 +165,11 @@ cursor: pointer;
     margin: 0;
     cursor: pointer;
 }
+
 .carousel-inner {
     width: 90%;
 }
+
 .carousel__edit {
     padding-block: 15px;
     position: sticky;
@@ -183,21 +185,24 @@ cursor: pointer;
     font-size: small;
     font-weight: 600;
 }
-#filterButton:hover {
-    border: 1px solid black;
-}
+
 #filterButton ion-icon {
     font-size: 20px;
 }
 
 #imageCarousel .carousel-control-next {
     border: 1px solid black;
-    width: 30px;
+    width: 25px;
     margin-right: 110px;
     border-radius: 50px;
-    height: 30px;
-    margin-top: 5px;
+    height: 25px;
+    margin-top: 7px;
 }
+
+#imageCarousel .carousel-control-next:hover {
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.07);
+}
+
 #imageCarousel .carousel-control-next-icon {
     background-image: url(./assets/svgcarouselscontrols/chevron-forward-outline.svg);
     width: 20px;
