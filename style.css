@@ -170,6 +170,10 @@ cursor: pointer;
 }
 .carousel__edit {
     padding-block: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
 }
 #filterButton {
     border: 1px solid lightgrey;

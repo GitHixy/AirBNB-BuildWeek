@@ -1233,8 +1233,8 @@ function displayCards() {
           }
           currentParentDiv.appendChild(carouselDivImage);
         }
-        currentCardTitle.innerHTML = accomodations[i].name + `${accomodations[i].review_scores_rating ? `<div><i class="bi bi-star-fill"></i>${accomodations[i].review_scores_rating}</div>` : ""}`;
-        /* currentRating.innerHTML = accomodations[i].review_scores_rating; */
+        let ratingsInFive = (accomodations[i].review_scores_rating * 5)/100
+        currentCardTitle.innerHTML = accomodations[i].name + `${accomodations[i].review_scores_rating ? `<div><i class="bi bi-star-fill"></i>${ratingsInFive}</div>` : ""}`;
         currentText.innerHTML = accomodations[i].host_name;
         currentSecondText.innerHTML = accomodations[i].property_type;
         currentPrice.innerHTML = `${accomodations[i].price} € <span>notte</span>`;
