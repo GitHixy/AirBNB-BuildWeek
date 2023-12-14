@@ -191,6 +191,7 @@ footer {
 .footer__container {
     width: 85%;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .footer__icons ion-icon {
@@ -198,4 +199,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.footer__links {
+  flex-wrap: wrap;
 }
