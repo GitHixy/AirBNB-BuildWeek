@@ -1222,7 +1222,9 @@ function displayCards() {
           heartIcon.classList.add("bi", "bi-suit-heart")
           carouselImages.setAttribute("src", accomodations[i].picture_urls[l]);
           carouselDivImage.appendChild(carouselImages);
-          carouselDivImage.appendChild(heartIcon)
+          if(accomodations[i].picture_urls[l] === accomodations[i].picture_urls[0]) {
+            currentParentDiv.appendChild(heartIcon);
+          }
           currentParentDiv.appendChild(carouselDivImage);
         }
         currentCardTitle.innerHTML = accomodations[i].name + `${accomodations[i].review_scores_rating ? `<div><i class="bi bi-star-fill"></i>${accomodations[i].review_scores_rating}</div>` : ""}`;
