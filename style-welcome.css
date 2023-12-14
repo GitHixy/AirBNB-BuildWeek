@@ -204,3 +204,25 @@ footer {
 .footer__links {
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 1200px) {
+  .search__card {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .jumbotron img {
+    display: none;
+  }
+
+  .search__card {
+    max-width: unset;
+    position: unset;
+    left: unset;
+  }
+
+  .jumbotron {
+    justify-content: center!important;
+  }
+}
