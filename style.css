@@ -65,11 +65,11 @@ cursor: pointer;
     border-radius: 50px;
     height: 45px;
     width: 12%;
-    position: absolute;
-    top: 655px;
-    left: 650px;
+    position: absolute!important;
+    top: 90%;
+    left: 50%;
     z-index: 99;
-    position: sticky;
+    position: sticky!important;
     font-weight: bold;
     font-size: small;
 }
